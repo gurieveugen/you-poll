@@ -116,6 +116,7 @@ function get_form_answers( yop_poll_various_config ) {
 }
 
 function yop_poll_register_vote( poll_id, poll_location, unique_id ) {
+	showUserInformation();
 	var yop_poll_public_config							= window['yop_poll_public_config_' + poll_id + unique_id ];
 	var yop_poll_various_config 						= new Object();
 	yop_poll_various_config.poll_id						= poll_id;
